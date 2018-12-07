@@ -22,5 +22,5 @@ describe('Login', () => {
     await page.screenshot({path: 'poopie3.png'})
     await expect(page).toMatch('Welcome to OVERLORD')
     done()
-  }, 30000)
+  }, 10000)
 });
