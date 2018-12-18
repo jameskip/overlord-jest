@@ -4,12 +4,13 @@ beforeAll(async () => {
 })
 
 beforeEach(async () => {
+  // const browser = await puppeteer.launch()
   const page = await browser.newPage()
 })
 
-// afterEach(async () => {
-//   await page.close()
-// })
+afterEach(async () => {
+  await page.close()
+})
 
 test('C118: Verify login with valid username and password', async (done) => {
   await page.goto('https://overlord-staging.corp.rambleron.com/')
