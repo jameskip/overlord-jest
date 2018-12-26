@@ -26,4 +26,3 @@ test('C118: Verify login with valid username and password', async (done) => {
   await expect(page).toMatch('Welcome to OVERLORD')
   done()
 })
-})
